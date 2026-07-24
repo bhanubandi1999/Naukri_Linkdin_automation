@@ -1,12 +1,18 @@
 import time
 import random
 from playwright.sync_api import sync_playwright
+import os
+
 
 # =====================================================
 # CONFIG
 # =====================================================
 
-CHROME_PATH = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# Chrome executable path (Windows)
+CHROME_PATH = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+
+# If Chrome is installed in Program Files (x86), use this instead:
+# CHROME_PATH = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 
 NAUKRI_LOGIN_URL = "https://www.naukri.com/nlogin/login"
 NAUKRI_PROFILE_URL = "https://www.naukri.com/mnjuser/profile"
@@ -88,9 +94,11 @@ ACCOUNTS = [
 
         "password": "password",
 
-        "user_data_dir": "/Users/bhanubandi/chrome-naukri-1",
+        # Chrome Profile Folder
+        "user_data_dir": r"C:\Users\BandiBhanuprakashRed\chrome-naukri-1",
 
-        "resume": "/Users/bhanubandi/Documents/Bandi_Bhanuprakash_Devops_Jul-2026-resume.pdf",
+        # Resume
+        "resume": r"C:\Users\BandiBhanuprakashRed\Downloads\Bandi_Bhanuprakash_Devops_Jul-2026-resume.pdf",
 
         "headlines": HEADLINES
     },
@@ -102,9 +110,9 @@ ACCOUNTS = [
 
         "password": "password",
 
-        "user_data_dir": "/Users/bhanubandi/chrome-naukri-2",
+        "user_data_dir": r"C:\Users\BandiBhanuprakashRed\chrome-naukri-2",
 
-        "resume": "/Users/bhanubandi/Documents/Bandi_Bhanuprakash_Devops_Jul-2026-resume.pdf",
+        "resume": r"C:\Users\BandiBhanuprakashRed\Downloads\Bandi_Bhanuprakash_Devops_Jul-2026-resume.pdf",
 
         "headlines": HEADLINES
     }
