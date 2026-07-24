@@ -86,7 +86,7 @@ ACCOUNTS = [
 
         "username": "bhanureddybandi@gmail.com",
 
-        "password": "Bhanubandi@1999",
+        "password": "password",
 
         "user_data_dir": "/Users/bhanubandi/chrome-naukri-1",
 
@@ -100,7 +100,7 @@ ACCOUNTS = [
 
         "username": "bhanureddy.awsdevops@gmail.com",
 
-        "password": "Bhanu@1999",
+        "password": "password",
 
         "user_data_dir": "/Users/bhanubandi/chrome-naukri-2",
 
